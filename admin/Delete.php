@@ -24,7 +24,7 @@
     <header class="header" id="home">
         <div class="container">
             <nav class="navigation-bar">
-                <a href="/src/index.php" class="logo"><img src="../assets/racing.svg"> AutoHub</a>
+                <a href="/src/index.php" class="logo"><img src="../assets/images/racing.svg"> AutoHub</a>
 
                 <a class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
                     <svg stroke="var(--button-color)" fill="none" class="hamburger" viewBox="-10 -10 120 120" width="75">
@@ -245,7 +245,7 @@
         <div class="container">
             <div class="left-wrapper">
                 <div class="">
-                    <a href="/src/index.php" class="logo"><img src="../assets/racing.svg"> AutoHub</a>
+                    <a href="/src/index.php" class="logo"><img src="../assets/images/racing.svg"> AutoHub</a>
                     <p>Use securing confined his shutters. Delightful as he it acceptance an solicitude discretion.</p>
                 </div>
                 <div class="footer__links">
