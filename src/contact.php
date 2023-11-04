@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/core-styles.css">
     <link rel="stylesheet" href="../assets/css/contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <title>Document</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon-32x32.png">
+    <title>AutoHub | Contact</title>
 </head>
 
 <body>
@@ -40,7 +42,7 @@
         </div>
     </header>
 
-    <section class="section container contact-us" id="contact">
+    <section class="section container contact-us" id="contact" data-aos="fade-up">
         <h2 class="section__title">Get In Touch</h2>
         <div class="contact-us__inner card even-columns">
             <div class="left_wrapper contact-info">
@@ -80,7 +82,7 @@
     </section>
 
 
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
         <div class="container">
             <div class="left-wrapper">
                 <div class="">
@@ -132,6 +134,10 @@
     </footer>
 
     <script src="../assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

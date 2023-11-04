@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon-32x32.png">
     <title>AutoHub | Login</title>
 </head>
 

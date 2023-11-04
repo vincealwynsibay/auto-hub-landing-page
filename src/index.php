@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
-  <title>AutoHub | Landing Page</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon-32x32.png">
+  <title>AutoHub - Find Your Perfect Car</title>
 </head>
 
 <body>
@@ -37,9 +38,9 @@
 
 
   <section class="hero section container" id="home">
-    <div class="left-wrapper">
-      <h1 class="hero__header">Purchase your <span class="accent">next car</span></h1>
-      <p class="hero__details">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animiadipisci aliquam, exercitationem rerum a odio. Officia, ducimuspossimus corrupti amet quos natus, nostrum, doloremque impeditexplicabo non dicta eaque aut.</p>
+    <div class="left-wrapper" data-aos="fade-right">
+      <h1 class="hero__header">Discover Your <span class="accent">Perfect</span> Car</h1>
+      <p class="hero__details">Welcome to AutoHub, Your gateway to a world of automotive excellence. A place for you to connect with us and discover your ideal car.</p>
       <div class="hero__cta-container">
         <a href="/src/contact.php" class="btn btn--primary btn--logo"><i class="fa-solid fa-phone"></i> Contact Us</a>
         <a href="/src/catalog.php" class="btn btn--secondary btn--logo"><i class="fa-solid fa-magnifying-glass"></i> Find a Car</a>
@@ -51,7 +52,7 @@
   </section>
 
 
-  <article class="container find_car">
+  <article class="container find_car" data-aos="fade-up">
     <?php
     $mName = '';
     $sortBy = '';
@@ -128,7 +129,7 @@
     </form>
   </article>
 
-  <section class="section container catalog" id="catalog">
+  <section class="section container catalog" data-aos="fade-up" id="catalog">
     <h2 class="section__title">Catalog</h2>
 
     <div class="catalog__list">
@@ -164,9 +165,9 @@
       if ($result) {
         if (mysqli_num_rows($result) > 0) {
           while ($row = mysqli_fetch_assoc($result)) {
-            // $price = "₱" . number_format($row['price'], 2, ".", ",");
+            $price = number_format($row['price'], 2, ".", ",");
             // $price = "₱" . nFormatter($row['price'], strlen(strval($row['price'])));
-            $price = nFormatter($row['price'], strlen(strval($row['price'])));
+            // $price = nFormatter($row['price'], strlen(strval($row['price'])));
             echo <<<HTML
                    <div class="catalog__item card">
                         <img src="{$row['image']}" alt="Car Image" width="200" height="200">
@@ -199,59 +200,49 @@
     <a href="/src/catalog.php" class="btn btn--primary-outline btn--logo">Show All Vehicles <i class="fa-solid fa-arrow-right"></i></a>
   </section>
 
-  <section class="section container testimonials" id="testimonial"><!-- REVIEWS -->
+  <section class="section container testimonials" data-aos="fade-up" id="testimonial"><!-- REVIEWS -->
     <h2 class="section__title">Testimonials</h2>
     <div class="owl-carousel owl-carousel1 owl-theme">
-      <div>
-        <div class="item card">
-          <p class="item-text">“ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animiadipisci aliquam, exercitationem rerum a odio. Officia, ducimuspossimus corrupti amet quos natus, nostrum, doloremque impeditexplicabo non dicta eaque aut. ” </p>
-          <div class="separator"></div>
-          <div class="item-author">
-            <img class="item-img-top" src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="">
-            <h5>Ronne Galle
-            </h5>
-          </div>
+      <div class="item card">
+        <p class="item-text">“ Excellent and professional - from reading their reviews to driving away the car. A place where the cars, their approach and their service means the cars sell themselves, no salesperson's pitch needed here. Highly Recommended. ” </p>
+        <div class="item-author">
+          <img class="item-img-top" src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="">
+          <h5>Ronne Galle
+          </h5>
         </div>
       </div>
 
-      <div>
-        <div class="item card ">
-          <p class="item-text">“ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animiadipisci aliquam, exercitationem rerum a odio. Officia, ducimuspossimus corrupti amet quos natus, nostrum, doloremque impeditexplicabo non dicta eaque aut. ” </p>
-          <div class="separator"></div>
-          <div class="item-author">
-            <img class="item-img-top" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="">
-            <h5>Missy Limana
-            </h5>
-          </div>
+      <div class="item card">
+        <p class="item-text">“ It was clean and very spotless. The service I got was fast and the sales lady helped me with everything I needed. They went out of their way to accomodate our needs. 5-Star Customer Service and Quality ” </p>
+        <div class="item-author">
+          <img class="item-img-top" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="">
+          <h5>Missy Limana
+          </h5>
         </div>
       </div>
-      <div>
-        <div class="item card ">
-          <p class="item-text">“ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animiadipisci aliquam, exercitationem rerum a odio. Officia, ducimuspossimus corrupti amet quos natus, nostrum, doloremque impeditexplicabo non dicta eaque aut. ” </p>
-          <div class="separator"></div>
-          <div class="item-author">
-            <img class="item-img-top" src="https://images.unsplash.com/photo-1575377222312-dd1a63a51638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=302&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=302" alt="">
-            <h5>Martha Brown
-            </h5>
-          </div>
+
+      <div class="item card ">
+        <p class="item-text">“ Good experience as a first time buyer. Friendly and great sales service. Glad to have purchased here. They are very up front from the start. Will recommend to friends and family. ” </p>
+        <div class="item-author">
+          <img class="item-img-top" src="https://images.unsplash.com/photo-1575377222312-dd1a63a51638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=302&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=302" alt="">
+          <h5>Martha Brown
+          </h5>
         </div>
       </div>
-      <div>
-        <div class="item card ">
-          <p class="item-text">“ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animiadipisci aliquam, exercitationem rerum a odio. Officia, ducimuspossimus corrupti amet quos natus, nostrum, doloremque impeditexplicabo non dicta eaque aut. ” </p>
-          <div class="separator"></div>
-          <div class="item-author">
-            <img class="item-img-top" src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt="">
-            <h5>Hanna Lisem
-            </h5>
-          </div>
+      <div class="item card ">
+        <p class="item-text">“ We were in need of a vehicle quickly and the folks at AutoHub rose to our needs. The whole process was smooth from start to finish. I will be back to buy again. ” </p>
+        <div class="item-author">
+          <img class="item-img-top" src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt="">
+          <h5>Hanna Lisem
+          </h5>
         </div>
       </div>
+    </div>
 
   </section>
 
 
-  <footer class="footer">
+  <footer class="footer" data-aos="fade-up">
     <div class="container">
       <div class="left-wrapper">
         <div class="">

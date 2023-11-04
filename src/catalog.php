@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/core-styles.css" />
     <link rel="stylesheet" href="../assets/css/catalog.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon-32x32.png">
 
     <title>AutoHub | Catalog</title>
 </head>
@@ -32,7 +34,7 @@
     </header>
 
 
-    <main class="catalog section container">
+    <main class="catalog section container" data-aos="fade-right">
         <div class="left-wrapper">
             <form id="searchForm" class="form card" method="POST">
                 <div class="form_field">
@@ -191,7 +193,7 @@
                 </div>
             </form>
         </div>
-        <div class="right-wrapper">
+        <div class="right-wrapper" data-aos="fade-left">
             <div class="catalog__list">
                 <?php
                 include('../admin/connect_to_database.php');
@@ -267,7 +269,7 @@
             </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
         <div class="container">
             <div class="left-wrapper">
                 <div class="">
@@ -320,6 +322,10 @@
 
     <script src="../assets/js/script.js"></script>
     <script src="../assets/js/form.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
