@@ -1,0 +1,57 @@
+/* CONTACT US */
+.contact-us__inner {
+  display: grid;
+  flex-direction: column-reverse;
+  gap: 3rem;
+}
+
+.contact-us__inner .form {
+  width: 100%;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.contact-info > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-info__details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  color: var(--header-color);
+  font-size: 1.4rem;
+}
+
+.contact-info__details span {
+  /* font-weight: 500; */
+  color: var(--text);
+}
+
+.contact-info__details p {
+  /* font-weight: 500; */
+  font-size: 1.2rem;
+}
+
+.contact__title {
+  font-size: var(--header-5);
+}
+
+@media (min-width: 769px) {
+  .contact-us__inner {
+    justify-content: space-between;
+    grid-template-columns: 30% 60%;
+  }
+
+  .contact-us__inner .form {
+    width: 100%;
+  }
+}

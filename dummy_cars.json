@@ -1,0 +1,82 @@
+[
+  {
+    "make": "Ford",
+    "model_name": "Excursion",
+    "price": 17157,
+    "transmission": "automatic",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "fuel_type": "diesl"
+  },
+  {
+    "make": "Toyota",
+    "model_name": "MR2",
+    "price": 13464,
+    "transmission": "manual",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "fuel_type": "gasoline"
+  },
+  {
+    "make": "Chevrolet",
+    "model_name": "Uplander",
+    "price": 75658,
+    "transmission": "automatic",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "fuel_type": "diesl"
+  },
+  {
+    "make": "Ford",
+    "model_name": "Thunderbird",
+    "price": 60918,
+    "transmission": "manual",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "fuel_type": "gasoline"
+  },
+  {
+    "make": "Lexus",
+    "model_name": "ES",
+    "price": 25839,
+    "transmission": "automatic",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "fuel_type": "gasoline"
+  },
+  {
+    "make": "Volvo",
+    "model_name": "V70",
+    "price": 53921,
+    "transmission": "manual",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "fuel_type": "gasoline"
+  },
+  {
+    "make": "Mitsubishi",
+    "model_name": "Montero",
+    "price": 69312,
+    "transmission": "automatic",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "fuel_type": "premium"
+  },
+  {
+    "make": "Pontiac",
+    "model_name": "Sunfire",
+    "price": 72554,
+    "transmission": "manual",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "fuel_type": "diesl"
+  },
+  {
+    "make": "Ford",
+    "model_name": "F150",
+    "price": 82087,
+    "transmission": "automatic",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "fuel_type": "premium"
+  },
+  {
+    "make": "Lamborghini",
+    "model_name": "Gallardo",
+    "price": 9339,
+    "transmission": "manual",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "fuel_type": "diesl"
+  }
+]

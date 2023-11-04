@@ -1,0 +1,61 @@
+main {
+  display: grid;
+  place-items: center;
+}
+
+.section {
+  padding-block: 2rem var(--sectionPadding);
+}
+
+.form--login {
+  padding-block: 5rem;
+  max-width: 600px;
+  border-radius: 5px;
+}
+
+.form--login h2 {
+  text-transform: none;
+  font-size: var(--header-4);
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+
+.form--login label {
+  color: var(--dark-gray);
+  font-size: 1.2rem;
+}
+
+.form--login .form_field div {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form--login .form_field span {
+  position: absolute;
+  left: 4%;
+  bottom: 7px;
+  transform: translateY(-50%);
+  color: var(--dark-gray);
+}
+
+.form--login .form_field input {
+  width: 100%;
+  padding-left: 3.5rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+.form--login .form_field input::placeholder {
+  font-size: 1.1rem;
+}
+
+.form--login button {
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #ff0000;
+}
